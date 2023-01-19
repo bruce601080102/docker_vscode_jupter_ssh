@@ -22,8 +22,5 @@ RUN apt install zsh -y &&  \
      chsh -s $(which zsh)
 
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-COPY .zshrc  /
-RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/bruce601080102/docker_vscode_jupter_ssh/main/build_zsh1.sh)"
-# cp /opt/nvidia/deepstream/deepstream-6.1/commonFolder/.zshrc ~/
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source ~/.zshrc
+
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/bruce601080102/docker_vscode_jupter_ssh/main/build_zsh.sh)"
